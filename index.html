@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Silk Road Journeys — Uzbekistan tours, guides and trains</title>
+  <meta name="description" content="Small-group and private journeys through Samarkand, Bukhara, Khiva, Tashkent and the Fergana Valley. Licensed local guides, Afrosiyob train seats and honest pricing.">
+  <meta name="theme-color" content="#070B16">
+  <meta property="og:title" content="Silk Road Journeys — Uzbekistan, curated">
+  <meta property="og:description" content="Hand-built itineraries across the Silk Road cities of Uzbekistan.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0F1D'/%3E%3Cpath d='M16 5l9 6v3h-3v11h-4v-7h-4v7H9V14H6v-3z' fill='%23D4AF37'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" id="skipLink" href="#main">Skip to content</a>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Primary">
+      <a class="brand" href="#" id="brand" aria-label="Silk Road Journeys home"></a>
+      <nav class="nav" id="navMain" aria-label="Sections"></nav>
+      <div class="side-card" id="sideCard"></div>
+      <div class="side-foot" id="sideFoot"></div>
+    </aside>
+
+    <div class="scrim" id="scrim" hidden></div>
+
+    <div class="content">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+
+        <div class="search" id="searchBox" role="search">
+          <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="Search tours, cities or monuments" aria-label="Search" aria-expanded="false" aria-controls="searchResults">
+          <kbd class="search-kbd">/</kbd>
+          <div class="search-results" id="searchResults" hidden></div>
+        </div>
+
+        <div class="actions">
+          <div class="dd" id="currencyDD">
+            <button class="dd-btn" id="currencyBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <span class="dd-label" id="currencyLabel">USD</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dd-menu" id="currencyMenu" role="listbox" hidden></div>
+          </div>
+
+          <div class="dd" id="langDD">
+            <button class="dd-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <span class="dd-globe" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.4 4 5.7 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.7-4-9s1.4-6.6 4-9z"/></svg>
+              </span>
+              <span class="dd-label" id="langLabel">EN</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dd-menu dd-menu--lang" id="langMenu" role="listbox" hidden></div>
+          </div>
+
+          <div id="authArea" class="auth-area"></div>
+        </div>
+      </header>
+
+      <main id="main" tabindex="-1"></main>
+      <footer class="footer" id="footer"></footer>
+    </div>
+  </div>
+
+  <nav class="bottomnav" id="bottomNav" aria-label="Quick navigation"></nav>
+
+  <div id="modalRoot"></div>
+  <div class="toasts" id="toastRoot" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
